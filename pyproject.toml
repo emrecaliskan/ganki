@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ganki"
+version = "0.1.0"
+description = ""
+authors = ["emre <emre@electriccapital.com>"]
+readme = "README.md"
+packages = [{include = "ganki"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+genanki = "^0.13.0"
+langchain = "^0.0.200"
+pip = "^23.1.2"
+install = "^1.3.5"
+openai = "^0.27.8"
+playwright = "^1.35.0"
+unstructured = "^0.7.5"
+rich = "^13.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ganki = "ganki.cli:cli"
